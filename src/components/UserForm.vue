@@ -1,7 +1,8 @@
 <template>
 <form>
   <input type="text" v-model="firstname" placeholder="prénom">
-  <input type="submit" value="Envoyer">
+  <input type="submit" value="Envoyer" class="submit">
+  <input type="button" value="Cancel" class="cancel">
 </form>
 {{firstname}}
 </template>
@@ -20,6 +21,16 @@ form {
   max-width: 60%;
   input {
     margin: 0 20px;
+    padding: 8px 20px;
+
+    &.submit {
+      border: none;
+      background-color: rgb(173, 252, 173);
+    }
+    &.cancel {
+      border: none;
+      background-color: rgb(246, 151, 151);
+    }
   }
 }
 
