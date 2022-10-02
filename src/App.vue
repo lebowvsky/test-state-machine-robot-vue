@@ -1,18 +1,12 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <h1>State machine test</h1>
+  <UsersList />
+  <UserForm />
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
-
-export default defineComponent({
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-});
+<script lang="ts" setup>
+import UserForm from '@/components/UserForm.vue'
+import UsersList from '@/components/UsersList.vue'
 </script>
 
 <style lang="scss">
